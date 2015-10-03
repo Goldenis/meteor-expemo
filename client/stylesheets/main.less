@@ -1,0 +1,74 @@
+// General styles, e. g. for the body tag
+@import 'helpers';
+@import 'variables';
+@import 'lib/elements';
+
+/* -------------------
+    Main Content
+   ------------------- */
+
+body, #main {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -240px;
+    margin-left: -160px;
+    width: 320px;
+    height: 480px;
+    padding: 0px;
+    overflow-x: hidden;
+    color: @primaryFontColor;
+    font-family: 'Fauna One', serif;
+}
+.button {
+    display: block;
+    background-color: #f67480;
+    padding: 10px 30px;
+    color: white;
+}
+.button:hover {
+    color: white;
+}
+.monster-svg {
+    background: url('images/monster.svg');
+}
+.cloud-svg {
+    background: url('images/cloud.svg');   
+}
+.review-svg {
+    background: url('images/startmyreview_icon.svg');      
+}
+a {
+    color: inherit;
+    transition: 0.3s color;
+
+    &:hover {
+        color: @primaryLinkHoverColor;
+    }
+}
+
+.icon {
+    &.orange {
+        color: @html5Orange;
+    }
+}
+
+.ui.header {
+    font-family: 'Glegoo', serif;
+}
+
+.site-wrapper {
+    margin: 0 auto;
+    max-width: @largeDesktopWidth;
+}
+
+/* -------------------
+    Footer
+   ------------------- */
+.padding-wrapper.footer {
+    .border-radius(0px);
+
+    a:hover {
+        color: @secondaryLinkHoverColor;
+    }
+}
